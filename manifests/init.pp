@@ -54,7 +54,7 @@ class remi {
     yumrepo { 'remi-php55':
       descr          => "Les RPM de remi en test pour Enterprise Linux ${::os_maj_version} - ${::architecture} - php55",
       baseurl        => "http://rpms.famillecollet.com/enterprise/${::os_maj_version}/php55/${::architecture}/",
-      enabled        => '0',
+      enabled        => '1',
       gpgcheck       => '1',
       gpgkey         => "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi",
     }
